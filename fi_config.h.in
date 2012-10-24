@@ -1,0 +1,36 @@
+#cmakedefine fi_VERSION_MAJOR ${fi_VERSION_MAJOR}
+#cmakedefine fi_VERSION_MINOR ${fi_VERSION_MINOR}
+
+#cmakedefine HAVE_TBB 1
+
+#cmakedefine HAVE_OPENNI 1
+
+#cmakedefine HAVE_EIGEN 1
+
+#cmakedefine HAVE_FLANN 1
+
+#cmakedefine USE_MULTITHREADING 1
+
+#cmakedefine HAVE_QHULL 1
+
+#cmakedefine HAVE_QHULL_2011 1
+
+#cmakedefine HAVE_CUDA 1
+
+#cmakedefine HAVE_C++0X 1
+
+#cmakedefine HAVE_Boost 1
+
+#cmakedefine HAVE_FLANN 1
+
+#ifdef DISABLE_OPENNI
+#undef HAVE_OPENNI
+#endif
+
+#define VPDETECTION_TOOL "@VPDETECTION_TOOL@"
+
+#ifdef DISABLE_QHULL
+#undef HAVE_QH
+ULL
+#endif
+
